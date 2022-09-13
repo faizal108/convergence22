@@ -1,0 +1,86 @@
+:root {
+    --primary : rgb(64, 169, 64);
+    --prim-hover : green;
+}
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+
+.hero-wrapper {
+     /* border: 2px solid red; */
+     padding: 3rem;
+}
+
+.hero-title {
+     /* border: 2px solid red; */
+     color: var(--primary);
+     padding: 1rem;
+}
+.hero-title h1{
+     font-size: 2.5rem;
+     font-family: serif;
+}
+
+.hero-events{
+     /* border: 2px solid red; */
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+}
+
+.event-card {
+     /* border: 2px solid red; */
+     padding: .8rem;
+     min-width: 300px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+.event-card .event-img{
+     border: 2px solid var(--primary);
+     padding: .2rem;
+     overflow: hidden;
+     width: 190px;
+     height: 190px;
+     border-radius: 50%;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.event-card .event-img img {
+     width: 180px;
+     height: 180px;
+     border-radius: 50%;
+}
+.event-card .event-title {
+     text-align: center;
+     /* border: 2px solid red; */
+     color: var(--primary);
+     width: 200px;
+     height: 55px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 2rem;
+     cursor: pointer;
+}
+.event-card .event-title h2 {
+     text-transform: uppercase;
+}
+.event-card:hover .event-title,.event-card:hover .event-img {
+     color: var(--prim-hover);
+     transition: all .4s ease;
+     /* border-color: var(--prim-hover); */
+}
+.event-card:hover .event-img {
+     box-shadow: 0px 0px 10px green;
+}

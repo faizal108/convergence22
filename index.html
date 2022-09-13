@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Convergence 2022</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/events.css">
+  <!--
+
+TemplateMo 565 Onix Digital
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+</head>
+
+<body>
+  <script>
+    (function () {
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+      //I'm adding this section so I don't have to keep updating this pen every year :-)
+      //remove this if you don't need it
+      let today = new Date(),
+        dd = String(today.getDate()).padStart(2, "0"),
+        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        yyyy = today.getFullYear(),
+        nextYear = yyyy + 1,
+        dayMonth = "10/14/",
+        birthday = dayMonth + yyyy;
+
+      today = mm + "/" + dd + "/" + yyyy;
+      if (today > birthday) {
+        birthday = dayMonth + nextYear;
+      }
+      //end
+
+      const countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+
+          const now = new Date().getTime(),
+            distance = countDown - now;
+
+          document.getElementById("days").innerText = Math.floor(distance / (day)),
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+          //do something later when date is reached
+          if (distance < 0) {
+            document.getElementById("headline").innerText = "It's my birthday!";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            clearInterval(x);
+          }
+          //seconds
+        }, 0)
+    }());
+  </script>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Events</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover"><a href="#contact">Register</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h6>Ganpat University Presents</h6>
+                  <h2>Conver<em>gence</em><span><br>2022</span></h2>
+                  <p>An opportunity to achieve excellence and fight it out in newer, smarter and more challenging
+                    technical problem statements.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#contact">Register Yourself</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-calendar"></i> 14th & 15th October 2022</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Ganpat University Presents</h6>
+                  <h2>Conver<em>gence</em><span><br>2022</span></h2>
+                  <p>An opportunity to achieve excellence and fight it out in newer, smarter and more challenging
+                    technical problem statements.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#contact">Register Yourself</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-calendar"></i> 14th & 15th October 2022</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="item header-text">
+                  <h6>Video Tutorials</h6>
+                  <h2>Watch <em>our videos</em> for your <span>projects</span></h2>
+                  <p>Please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal if this digital marketing HTML template is useful for you. Thank you.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#video">Watch Videos</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> 050-040-0320</a>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timer_container">
+    <h1 id="headline">14th and 15th October</h1>
+    <div id="countdown">
+      <ul>
+        <li id="count"><span id="days"></span>days</li>
+        <li id="count"><span id="hours"></span>Hours</li>
+        <li id="count"><span id="minutes"></span>Minutes</li>
+        <li id="count"><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+    <div id="timer_content" class="emoji">
+      <span>🥳</span>
+      <span>🎉</span>
+      <span>🎂</span>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="assets/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>We <em>Provide</em> The Best Service With <span>Our Tools</span></h2>
+            <span>Our Services</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-events owl-carousel owl-services">
+
+        <div class="event-card">
+          <div class="event-img">
+            <a href="./assets/pages/infocarts.html"><img src="assets/images/events/infocrats.png" alt="Event-1" /></a>
+          </div>
+          <div class="event-title">
+            <h2>infocrats</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/biotechnica.png" alt="Event-2" /></a>
+          </div>
+          <div class="event-title">
+            <h2>biotechnica</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/civesta.png" alt="Event-3" /></a>
+          </div>
+          <div class="event-title">
+            <h2>civesta</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/electrabuzz-2.JPG" alt="Event-4" /></a>
+          </div>
+          <div class="event-title">
+            <h2>electrabuzz</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/maritech.png" alt="Event-5" /></a>
+          </div>
+          <div class="event-title">
+            <h2>maritech</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/mathmagix.jpeg" alt="Event-6" /></a>
+          </div>
+          <div class="event-title">
+            <h2>math magix</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/MECH MECHATO.jpeg" alt="Event-7" /></a>
+          </div>
+          <div class="event-title">
+            <h2>mech mechato</h2>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="#"><img src="assets/images/events/petrox.png" alt="Event-8" /></a>
+          </div>
+          <div class="event-title">
+            <h2>petrox</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="assets/images/convo.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Ganpat<em> University</em> <span>Convergence</span> 2022</h2>
+            <p>Convergence 2022 is one of the most awaited events of the year, making campus vibrant, full of energy,
+              excitement, and youthfulness. It is the combination of nine wings, namely - Infocrats, CIVESTA,
+              Mech-Mechato, PetroX, Biotechnica, Electabuzz, MARITECH, MATHMAGIX, General Events. The Nine Wings
+              encourages students from various field such as Technology, Computer Engineering, IT, Civil, Electrical
+              Engineering and many more to showcase and test their skillset a national platform.</p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="assets/images/service-icon-01.png" alt="">
+                    </div>
+                    <div class="count-digit">50 +</div>
+                    <div class="count-title">Events</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="assets/images/service-icon-02.png" alt="">
+                    </div>
+                    <div class="count-digit">100,000 +</div>
+                    <div class="count-title">Cash Prize</div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="icon">
+                      <img src="assets/images/service-icon-03.png" alt="">
+                    </div>
+                    <div class="count-digit">100,000 +</div>
+                    <div class="count-title">Cash Prize</div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="portfolio" class="our-portfolio section">
+    <div class="portfolio-left-dec">
+      <img src="assets/images/portfolio-left-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Our Recent <em>Projects</em> &amp; Case Studies <span>for Clients</span></h2>
+            <span>Our Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-portfolio">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-01.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a rel="sponsored" href="https://templatemo.com/tm-564-plot-listing" target="_parent"><h4>First Project</h4></a>
+                    <span>Plot Listing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-02.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Two</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-03.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a rel="sponsored" href="https://templatemo.com/tm-562-space-dynamic" target="_parent"><h4>Third Project</h4></a>
+                    <span>Space Dynamic SEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-04.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Four</h4></a>
+                    <span>Website Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-01.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Fifth Project</h4></a>
+                    <span>Digital Assets</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-02.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Sixth Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-03.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>7th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-04.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>8th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-01.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>9th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-02.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Ten</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-03.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>Project Eleven</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/portfolio-04.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="inner-content">
+                    <a href="#"><h4>12th Project</h4></a>
+                    <span>SEO &amp; Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Select a suitable <em>plan</em> for your next <span>projects</span></h2>
+            <span>Our Plans</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="item first-item">
+<<<<<<< HEAD
+=======
+            <img id="card" src="assets/images/objective.png" alt="">
+            <h4 style="margin-top: 10px; font-size: 27px;">Objective</h4>
+            <!-- <em>$160/mo</em>
+            <span>$140</span> -->
+            <ul>
+              <li style="font-size: 16px;">To give new aspiring students and developers, an opportunity to achieve excellence and fight it out in newer, smarter and more challenging technical problem statements.</li>
+              <!-- <li>100 GB space</li>
+              <li>20 SEO checkups</li>
+              <li>Basic Support</li> -->
+            </ul>
+            <!-- <div class="main-blue-button-hover">
+=======
+            <style>
+              img {
+                border-radius: 100%;
+                /* margin-top: 10px; */
+              }
+            </style>
+>>>>>>> 00dbbc7911332561ff5827367d438298636518bd
+            <h4>Objective</h4>
+            <img src="assets/images/objective.png" alt="Avatar" style="width:200px ">
+            <!-- <h4>Starter Plan</h4>
+            <em>$160/mo</em>
+            <span>$140</span> -->
+<<<<<<< HEAD
+            <p><br>To give new aspiring students and developers, an opportunity to achieve excellence and fight it out
+              in newer, smarter and more challenging technical problem statements.</p><br>
+=======
+>>>>>>> 8e97960d480d17a5811471a91efd1390a1334baa
+            <!-- <ul>
+              <li>10 Projects</li>
+              <li>100 GB space</li>
+              <li>20 SEO checkups</li>
+              <li>Basic Support</li>
+            </ul> -->
+            <!-- <div class="main-blue-button-hover">
+              <a href="#">Get Started</a>
+            </div> --> 
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <img id="card" src="assets/images/eligibility.png" alt="">
+            <h4 style="margin-top: 10px; font-size: 27px;">Eligibility</h4>
+            <!-- <em>$240/mo</em>
+            <span>$200</span> -->
+            <ul>
+              <li style="font-size: 16px;">Students pursuing any Bachelor Degree, Master Degree, any certificate course or diploma is eligible to apply. (e.g., BCA, MCA, BBA, MBA, B.Sc., M.Sc.,BTech, MTech, BCS, BCOM, etc.)</li>
+              <!-- <li>200 GB space</li>
+              <li>50 SEO checkups</li>
+              <li>Pro Support</li> -->
+            </ul>
+            <!-- <div class="main-blue-button-hover">
+              <a href="#">Get it Now</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item third-item">
+            <img id="card" src="assets/images/prize.png" alt="">
+            <h4 style="margin-top: 10px; font-size: 27px;">Prizes</h4>
+            <!-- <em>$360/mo</em>
+            <span>$280</span> -->
+            <ul>
+              <li style="font-size: 16px;">Prizes worth Rs 1,00,000+ to be distriuted among the winners along with cetificates, trophies and refreshments for the participants.</li>
+              <!-- <li>300 GB space</li>
+              <li>100 SEO checkups</li>
+              <li>Best Support</li> -->
+            </ul>
+            <!-- <div class="main-blue-button-hover">
+              <a href="#">Buy Now</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="subscribe" class="subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="inner-content">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <h2>Show us your talent. We'll make it shine ! </h2>
+                <form id="subscribe" action="" method="get">
+                  <!-- <input type="text" name="website" id="website" > -->
+                  <input type="text" name="email" id="email" >
+                  <button type="submit" id="form-submit" class="main-button ">Register Yourself</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+      <img src="assets/images/videos-left-dec.png" alt="">
+    </div>
+    <div class="videos-right-dec">
+      <img src="assets/images/videos-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-8">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JynGuQx4a1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Project One</h4></a>
+                            <span>SEO &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RdJBSFpcO4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Second Project</h4></a>
+                            <span>Advertising &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ZlfAjbQiL78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Project Three</h4></a>
+                            <span>Digital &amp; Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/mx1WseE7-0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Fourth Project</h4></a>
+                            <span>SEO &amp; Advertising</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <div class="menu">
+                    <div class="active">
+                      <div class="thumb">
+                        <img src="assets/images/video-thumb-01.png" alt="">
+                        <div class="inner-content">
+                          <h4>Project One</h4>
+                          <span>SEO &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="assets/images/video-thumb-02.png" alt="">
+                        <div class="inner-content">
+                          <h4>Second Project</h4>
+                          <span>Advertising &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="assets/images/video-thumb-03.png" alt="Marketing">
+                        <div class="inner-content">
+                          <h4>Project Three</h4>
+                          <span>Digital &amp; Marketing</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="assets/images/video-thumb-04.png" alt="SEO Work">
+                        <div class="inner-content">
+                          <h4>Fourth Project</h4>
+                          <span>SEO &amp; Advertising</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="section-heading">
+            <h2>Feel free to <em>Contact</em> us <span>Convergence 2022</span></h2>
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.089243076618!2d72.45554761462051!3d23.52929240310455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c476c5013fd03%3A0xa1fe01d9ab30482!2sGanpat%20University%20(GUNI)%2C%20India!5e0!3m2!1sen!2sin!4v1663061482407!5m2!1sen!2sin"
+                width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+            <div class="info">
+              <span><i class="fa fa-phone"></i> <a href="#">010-020-0340<br>090-080-0760</a></span>
+              <span><i class="fa fa-envelope"></i> <a href="#">info@company.com<br>mail@company.com</a></span>
+            </div>
+          </div>
+        </div>
+        <!-- <div>
+          <img src="assets/images/sustainable.jpg" alt="">
+        </div> -->
+        <div class="col-lg-5 align-self-center">
+          <img src="assets/images/sustainable.jpg" alt="">
+        </div>
+        <!-- <div class="col-lg-5 align-self-center">
+          <form id="contact" action="" method="get">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="contact-dec">
+      <img src="assets/images/contact-dec.png" alt="">
+    </div> -->
+    <div class="contact-left-dec">
+      <img src="assets/images/contact-left-dec.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="assets/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about footer-item">
+            <div class="logo">
+              <a href="#"><img src="assets/images/logo.png" alt="Onix Digital TemplateMo"></a>
+            </div>
+            <a href="https://uvpce.guni.ac.in/" target="_blank">U.V.Patel College of Enginnering</a>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="services footer-item">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">SEO Development</a></li>
+              <li><a href="#">Business Growth</a></li>
+              <li><a href="#">Social Media Managment</a></li>
+              <li><a href="#">Website Optimization</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="community footer-item">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Business Ideas</a></li>
+              <li><a href="#">Website Checkup</a></li>
+              <li><a href="#">Page Speed Test</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="subscribe-newsletters footer-item">
+            <h4>Subscribe Newsletters</h4>
+            <p>Get our latest news and ideas to your inbox</p>
+            <form action="#" method="get">
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+              <button type="submit" id="form-submit" class="main-button "><i class="fa fa-paper-plane-o"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2022 Convergence , Ltd. All Rights Reserved.
+              <br>
+              Designed by <a rel="nofollow" href="https://uvpce.guni.ac.in/" title="uvpce">GUNI UVPCE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+  </script>
+</body>
+
+</html>
