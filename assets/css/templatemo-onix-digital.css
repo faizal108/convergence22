@@ -1,8 +1,5 @@
 /*
 
-TemplateMo 565 Onix Digital
-
-https://templatemo.com/tm-565-onix-digital
 
 
 ------------------------------------------------
@@ -752,7 +749,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    margin-left: 3px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -949,7 +946,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 236px 0px 130px 0px;
+  padding: 170px 0px 130px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -957,7 +954,7 @@ Banner Style
 .main-banner:after {
   content: '';
   background-image: url(../images/green.png);
-  filter: blur(1px);
+  filter: blur(5px);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -973,7 +970,7 @@ Banner Style
   background-size: cover;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 10px;
   width: 1000px;
   height: 674px;
 }
@@ -986,24 +983,26 @@ Banner Style
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 800;
-  color: #ff1100;
+  color: #009945;
   margin-bottom: 15px;
 }
 
 .main-banner .item h2 {
   font-size: 50px;
   font-weight: 700;
-  color: #2a2a2a;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #26883b;
   line-height: 72px;
 }
 
 .main-banner .item h2 em {
-  color: #03a4ed;
+  color: #26883b;
   font-style: normal;
 }
 
 .main-banner .item h2 span {
-  color: #ff3324;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #ffd724;
 }
 
 .main-banner .item p {
@@ -1016,6 +1015,7 @@ Banner Style
 
 .main-banner .item .down-buttons .call-button i {
   margin-right: 5px;
+  margin-top: 5px;
   width: 46px;
   height: 46px;
   display: inline-block;
