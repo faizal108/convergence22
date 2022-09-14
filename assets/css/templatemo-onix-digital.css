@@ -2279,4 +2279,11 @@ responsive
   .landing-content .landing-count .timer_container #headline {
     font-size: 1.5rem;
   }
+  .landing-content .landing-count .timer_container #countdown #count {
+    font-size: 1.1rem;
+    padding: 1.0rem;
+  }
+  .landing-content .landing-count .timer_container #countdown #count span {
+    font-size: 1.1rem;
+  }
 }
