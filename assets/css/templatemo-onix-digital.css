@@ -848,8 +848,7 @@ preloader
     right: 0;
     bottom: 0;
     background-color: #fff;
-    display: -webkit-box;
-    display: flex;
+   
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
@@ -943,6 +942,21 @@ Banner Style
 --------------------------------------------- 
 */
 
+.ADC-arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  width: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ADC-arrow a {
+  font-size: 28px;
+  color:black;
+}
+
 .main-banner {
   background-repeat: no-repeat;
   background-position: center center;
@@ -952,7 +966,7 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
+/* .main-banner:after {
   content: '';
   background-image: url(../images/subscribe-dec.png);
   filter: blur(0px);
@@ -974,6 +988,69 @@ Banner Style
   top: 10px;
   width: 1000px;
   height: 674px;
+} */
+
+.main-landing {
+  /* width: 100%;
+  height: 100vh; */
+  /* border: 2px solid red; */
+  /* content: ''; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* height: 100%;
+  width: 100%; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-attachment: fixed; 
+  background-size: 100% 100%; 
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+
+.main-landing .landing-title {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: fit-content;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.main-landing .landing-content {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-landing .landing-logo {
+  margin-top: 200px;
+  width: 35%;
+  /* border: 2px solid red; */
+  height: 35%;
+}
+
+.main-landing .landing-count {
+  margin-top: 200px;
+  width: 35%;
+  /* border: 2px solid red; */
+  height: 35%;
+}
+
+.main-landing .landing-logo img {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.main-landing .landing-count {
+  width: 700px;
+  /* border: 2px solid red; */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-banner .item {
