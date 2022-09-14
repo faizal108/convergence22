@@ -75,6 +75,7 @@
 }
 .event-card .event-title h2 {
      text-transform: uppercase;
+     color: var(--primary);
 }
 .event-card:hover .event-title,.event-card:hover .event-img {
      color: var(--prim-hover);
