@@ -1036,17 +1036,14 @@ Banner Style
   left: 0;
   z-index: 0;
   background-image: url("/assets/images/sus-4.jpeg");
-<<<<<<< HEAD
   background-size: cover;
   top: 50%;
   left: 0;
   z-index: 0;
-=======
   /* background-attachment: fixed;  */
   /* background-size: 100% 100%; */
   background-size: cover  ;
   /* background-size: 800px 600px; */
->>>>>>> 9205cfafd1cf53cdff8e7a16d6a556c517d31ef5
   background-repeat: no-repeat;
   background-position: bottom center;
 }
