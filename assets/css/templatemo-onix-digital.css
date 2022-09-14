@@ -2268,6 +2268,9 @@ responsive
     margin-bottom: 20px;
   }
 }
+div.loadImg{
+  width:20%
+}
 
 @media (max-width: 600px) {
   .main-landing .landing-title div img {
@@ -2285,5 +2288,8 @@ responsive
   }
   .landing-content .landing-count .timer_container #countdown #count span {
     font-size: 1.1rem;
+  }
+  .js-preloader .preloader-inner #loader .loadImg{
+    width:50vw
   }
 }
