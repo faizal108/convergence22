@@ -1036,6 +1036,10 @@ Banner Style
   left: 0;
   z-index: 0;
   background-image: url("/assets/images/sus-4.jpeg");
+  background-size: cover;
+  top: 50%;
+  left: 0;
+  z-index: 0;
   /* background-attachment: fixed;  */
   /* background-size: 100% 100%; */
   background-size: cover  ;
@@ -1050,13 +1054,18 @@ Banner Style
   height: fit-content;
   text-align: center;
   padding-top: 1rem;
-  background: linear-gradient(rgba(218, 239, 218, 0.89) 50%,rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(218, 239, 218, 0.89) 50%, rgba(0, 0, 0, 0));
 }
 .main-landing .landing-title div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.main-landing .landing-title div img {
+  min-width: 100px;
+  min-height: 50px;
 }
 
 .main-landing .landing-content {
@@ -1096,7 +1105,7 @@ Banner Style
   justify-content: center;
   align-items: center;
 }
-.main-landing .landing-count .timer_container{
+.main-landing .landing-count .timer_container {
   height: 310px;
   background-color: #ffffffc2;
   backdrop-filter: blur(2px);
@@ -1106,6 +1115,11 @@ Banner Style
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+}
+.main-landing .landing-count .timer_container h1 {
+  color: #585858;
+  font-weight: 600;
+  font-size: 2.5vw;
 }
 .main-banner .item {
   margin-right: 45px;
@@ -2252,5 +2266,17 @@ responsive
   }
   .contact-us .info span {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-landing .landing-title div img {
+    size: 400px 400px;
+  }
+  .landing-content .landing-count .timer_container {
+    height: 350px;
+  }
+  .landing-content .landing-count .timer_container #headline {
+    font-size: 1.5rem;
   }
 }
