@@ -1310,6 +1310,8 @@ About
 
 .about-us .section-heading p {
   margin-top: 50px;
+  text-align: justify;
+  text-justify:inter-word;
 }
 
 .about-us .fact-item .icon {
