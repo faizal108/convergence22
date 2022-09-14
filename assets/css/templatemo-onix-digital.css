@@ -999,11 +999,11 @@ Banner Style
   /* height: 100%;
   width: 100%; */
   /* position: absolute; */
-  top: 0;
+  top: 50%;
   left: 0;
   z-index: 0;
   background-attachment: fixed; 
-  background-size: 100% 100%; 
+  background-size: 100% auto; 
   /* background-size: cover; */
   background-repeat: no-repeat;
 }
