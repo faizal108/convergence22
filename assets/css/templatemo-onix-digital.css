@@ -366,6 +366,7 @@ header
 --------------------------------------------- 
 */
 
+
 .background-header {
   background-color: #fff!important;
   height: 80px!important;
@@ -946,21 +947,21 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 170px 0px 130px 0px;
+  padding: 170px 20px 130px 0px;
   position: relative;
   overflow: hidden;
 }
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/green.png);
-  filter: blur(5px);
+  background-image: url(../images/subscribe-dec.png);
+  filter: blur(0px);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 100px;
-  width: 1000px;
-  height: 532px;
+  width: 500px;
+  height: 600px;
 }
 
 .main-banner:before {
@@ -1135,7 +1136,7 @@ Services Style
 
 .our-services .owl-dots {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .our-services .owl-dots .owl-dot {
   width: 6px;
@@ -1161,11 +1162,11 @@ About
 
 .about-us {
   margin-top: 0px;
-  padding-top: 120px;
+  padding-top: 90px;
 }
 
 .about-us .left-image {
-  margin-right: 30px;
+  margin-right: 3px;
 }
 
 .about-us .section-heading h2 {
@@ -1876,7 +1877,7 @@ Footer Style
 }
 
 footer {
-  margin-top: -50px;
+  margin-top: -160px;
   z-index: 2;
   position: relative;
 }
