@@ -434,7 +434,7 @@ header
 */
 
 .background-header {
-  background-color: #fff !important;
+  background-color: rgb(0, 0, 0) !important;
   height: 80px !important;
   position: fixed !important;
   top: 0px;
@@ -1221,11 +1221,15 @@ Services Style
 */
 
 .our-services .services-left-dec img {
+<<<<<<< HEAD
   /* background-image: url(asstes/images/services-left-dec.png); */
+=======
+  filter: brightness(120%);
+>>>>>>> bc2a6aaca547f1dd8b51fbb328528b76aa8ec01b
   width: 387px;
   height: 638px;
-  left: -80px;
-  top: -140px;
+  left: -190px;
+  top: -100px;
   position: absolute;
   z-index: 1;
 }
