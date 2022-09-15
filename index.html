@@ -89,6 +89,7 @@ https://templatemo.com/tm-565-onix-digital
 
           const now = new Date().getTime(),
             distance = countDown - now;
+            // distance = 0;
 
           document.getElementById("days").innerText = Math.floor(distance / (day)),
             document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
@@ -97,8 +98,8 @@ https://templatemo.com/tm-565-onix-digital
 
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
+            document.getElementById("headline").innerText = "";
+            document.getElementById("countdown").style.display = "0";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
           }
@@ -217,11 +218,14 @@ https://templatemo.com/tm-565-onix-digital
   <div class="main-landing">
     <div class="landing-title">
       <div>
-        <img src="assets/images/25 years UVPCE logo.png" style="height: 23%; width: 23%"></img>
-        <img src="assets/images/bspp.png" style="height: 23%; width: 23%"></img>
-        <img src="assets/images/download__3_-removebg-preview.png" style="height: 23%; width: 23%"></img>
+        <!-- <img src="assets/images/25 years UVPCE logo.png" style="height: 23%; width: 23%"></img> -->
+        <img src="assets/images/25 years UVPCE logo.png" style="height: 20%; width: 20%"></img>
+        <!-- <img src="assets/images/download__3_-removebg-preview.png" style="height: 23%; width: 23%"></img> -->
       </div>
-      <!-- <h1 style="font-size: 20px; padding-top: 30px; font-weight: 800;">Presents</h1> -->
+      <h1 style="font-size: 15px; padding-top: 30px; font-weight: 500;">Associate Partners</h1>
+      <!-- <h1>Associate Partners</h1> -->
+      <img src="assets/images/bspp.png" style="height: 15%; width: 15%; margin-right: 400px;"></img>
+      <img src="assets/images/download__3_-removebg-preview.png" style="height: 15%; width: 15%"></img>
     </div>
     <div class="landing-content">
       <!-- <div class="landing-logo">
@@ -314,7 +318,7 @@ https://templatemo.com/tm-565-onix-digital
     </div>
     <div class="container">
       <div class="services-left-dec">
-        <img src="assets/images/services-left-dec.png" alt="">
+        <img src="assets/images/portfolio-left-dec.png" alt="">
       </div>
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
@@ -326,20 +330,28 @@ https://templatemo.com/tm-565-onix-digital
 
       <div class="hero-events">
 
-        <div class="event-card">
+        <!-- <div class="event-card">
           <div class="event-img">
             <a href="./assets/pages/infocarts.html"><img src="assets/images/events/infocrats.png" alt="Event-1" /></a>
           </div>
           <div class="event-title">
             <a href="./assets/pages/infocarts.html"><h2>infocrats</h2></a>
           </div>
-        </div>
+        </div> -->
         <div class="event-card">
           <div class="event-img">
             <a href="#"><img src="assets/images/events/biotechnica.png" alt="Event-2" /></a>
           </div>
           <div class="event-title">
             <a href="./assets/pages/infocarts.html"><h2>biotechnica</h2></a>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <a href="./assets/pages/infocarts.html"><img src="assets/images/events/infocrats.png" alt="Event-1" /></a>
+          </div>
+          <div class="event-title">
+            <a href="./assets/pages/infocarts.html"><h2>infocrats</h2></a>
           </div>
         </div>
         <div class="event-card">
