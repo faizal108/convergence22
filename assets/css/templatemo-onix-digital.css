@@ -1067,7 +1067,7 @@ Banner Style
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("/assets/images/sus-4.jpeg");
+  background-image: url("assets/images/sus-4.jpeg");
   background-size: cover;
   top: 50%;
   left: 0;
