@@ -1,3 +1,20 @@
+.ADC-arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: 50px;
+  margin: 0 auto;
+  /* padding-top: 20px; */
+  text-align: center;
+}
+
+.ADC-arrow a {
+  font-size: 2rem;
+  /* color: rgb(255, 255, 255); */
+  color: black;
+}
+
 .background-header {
   background-color: #fff!important;
   height: 80px!important;
@@ -538,6 +555,7 @@ span {
   /* border: 2px solid red; */
   min-width: 600px;
   height: 600px;
+  margin-bottom: 200px;
 }
 .hero-img img {
   width: 100%;
@@ -656,6 +674,7 @@ span {
 .events-wrapper {
   /* border: 2px solid red; */
   padding: 3rem;
+  /* margin-top: -150px; */
 }
 .events {
   /* border: 2px solid red; */
@@ -715,6 +734,56 @@ span {
   box-shadow: 0px 0px 10px green;
 }
 
+.event-card-cym {
+  /* border: 2px solid red; */
+  padding: 0.8rem;
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-card-cym .event-img {
+  border: 2px solid var(--primary);
+  padding: 0.2rem;
+  overflow: hidden;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.event-card-cym .event-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.event-card-cym .event-title {
+  text-align: center;
+  /* border: 2px solid red; */
+  color: var(--primary);
+  width: 200px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.event-card-cym .event-title h2 {
+  text-transform: uppercase;
+}
+.event-card-cym:hover .event-title,
+.event-card-cym:hover .event-img {
+  color: var(--prim-hover);
+  transition: all 0.4s ease;
+  /* border-color: var(--prim-hover); */
+}
+.event-card-cym:hover .event-img {
+  box-shadow: 0px 0px 10px green;
+}
+
 @media screen and (max-width: 600px) {
   .events-wrapper {
     padding: 1rem;
@@ -734,9 +803,19 @@ span {
     width: 170px;
     height: 170px;
   }
+
+  .event-card-cym .event-img {
+    width: 180px;
+    height: 180px;
+  }
+  .event-card-cym .event-img img {
+    width: 170px;
+    height: 170px;
+  }
 }
 
 /* ====Viewer========== */
+
 .viewer-wrapper {
   position: relative;
   width: 100%;
@@ -829,9 +908,9 @@ span {
 .container .details .desc {
   max-width: 100%;
   color: #333;
-  height: 300px;
+  height: 350px;
   overflow: scroll;
-  font-size: 15px;
+  font-size: -5px;
   margin-bottom: 1rem;
   /* border: 2px solid red; */
 }
