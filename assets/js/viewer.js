@@ -60,3 +60,10 @@ $("#9").click(function () {
 $("#view9 .btn-close").click(function () {
     $("#view9").removeClass("open");
 });
+
+$("#bio1").click(function () {
+    $("#viewBio1").addClass("open");
+});
+$("#viewBio1 .btn-close").click(function () {
+    $("#viewBio1").removeClass("open");
+});

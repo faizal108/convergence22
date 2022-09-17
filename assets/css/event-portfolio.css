@@ -505,7 +505,7 @@ span {
 .event-landing {
   /* border: 2px solid red; */
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -883,7 +883,7 @@ span {
 .container .details {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 500px;
   height: 100%;
   box-sizing: border-box;
@@ -908,7 +908,7 @@ span {
 .container .details .desc {
   max-width: 100%;
   color: #333;
-  height: 350px;
+  height: 450px;
   overflow: scroll;
   font-size: -5px;
   margin-bottom: 1rem;
