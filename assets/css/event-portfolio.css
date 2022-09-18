@@ -912,6 +912,8 @@ span {
   overflow: scroll;
   font-size: -5px;
   margin-bottom: 1rem;
+  text-align: justify;
+  margin-right: 30px;
   /* border: 2px solid red; */
 }
 .container .details .desc::-webkit-scrollbar {

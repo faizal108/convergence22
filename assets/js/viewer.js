@@ -67,3 +67,80 @@ $("#bio1").click(function () {
 $("#viewBio1 .btn-close").click(function () {
     $("#viewBio1").removeClass("open");
 });
+
+$("#bio2").click(function () {
+    $("#viewBio2").addClass("open");
+});
+$("#viewBio2 .btn-close").click(function () {
+    $("#viewBio2").removeClass("open");
+});
+
+$("#bio3").click(function () {
+    $("#viewBio3").addClass("open");
+});
+$("#viewBio3 .btn-close").click(function () {
+    $("#viewBio3").removeClass("open");
+});
+
+$("#bio4").click(function () {
+    $("#viewBio4").addClass("open");
+});
+$("#viewBio4 .btn-close").click(function () {
+    $("#viewBio4").removeClass("open");
+});
+
+$("#c1").click(function () {
+    $("#cview1").addClass("open");
+});
+$("#cview1 .btn-close").click(function () {
+    $("#cview1").removeClass("open");
+});
+
+$("#c2").click(function () {
+    $("#cview2").addClass("open");
+});
+$("#cview2 .btn-close").click(function () {
+    $("#cview2").removeClass("open");
+});
+
+$("#c3").click(function () {
+    $("#cview3").addClass("open");
+});
+$("#cview3 .btn-close").click(function () {
+    $("#cview3").removeClass("open");
+});
+
+$("#c4").click(function () {
+    $("#cview4").addClass("open");
+});
+$("#cview4 .btn-close").click(function () {
+    $("#cview4").removeClass("open");
+});
+
+$("#e1").click(function () {
+    $("#viewE1").addClass("open");
+});
+$("#viewE1 .btn-close").click(function () {
+    $("#viewE1").removeClass("open");
+});
+
+$("#e2").click(function () {
+    $("#viewE2").addClass("open");
+});
+$("#viewE2 .btn-close").click(function () {
+    $("#viewE2").removeClass("open");
+});
+
+$("#e3").click(function () {
+    $("#viewE3").addClass("open");
+});
+$("#viewE3 .btn-close").click(function () {
+    $("#viewE3").removeClass("open");
+});
+
+$("#e4").click(function () {
+    $("#viewE4").addClass("open");
+});
+$("#viewE4 .btn-close").click(function () {
+    $("#viewE4").removeClass("open");
+});
