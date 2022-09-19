@@ -144,3 +144,17 @@ $("#e4").click(function () {
 $("#viewE4 .btn-close").click(function () {
     $("#viewE4").removeClass("open");
 });
+
+$("#m1").click(function () {
+    $("#viewm1").addClass("open");
+});
+$("#viewm1 .btn-close").click(function () {
+    $("#viewm1").removeClass("open");
+});
+
+$("#m2").click(function () {
+    $("#viewm2").addClass("open");
+});
+$("#viewm2 .btn-close").click(function () {
+    $("#viewm2").removeClass("open");
+});
