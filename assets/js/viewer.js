@@ -61,6 +61,13 @@ $("#view9 .btn-close").click(function () {
     $("#view9").removeClass("open");
 });
 
+$("#10").click(function () {
+    $("#view10").addClass("open");
+});
+$("#view10 .btn-close").click(function () {
+    $("#view10").removeClass("open");
+});
+
 $("#bio1").click(function () {
     $("#viewBio1").addClass("open");
 });
