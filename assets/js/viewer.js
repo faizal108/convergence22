@@ -172,3 +172,10 @@ $("#m2").click(function () {
 $("#viewm2 .btn-close").click(function () {
     $("#viewm2").removeClass("open");
 });
+
+$("#central1").click(function () {
+    $("#centralview1").addClass("open");
+});
+$("#centralview1 .btn-close2").click(function () {
+    $("#centralview1").removeClass("open");
+});
