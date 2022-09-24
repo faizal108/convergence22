@@ -1187,7 +1187,10 @@ Banner Style
 .main-landing .landing-count .timer_container ul li {
   color: #2cb084;
   font-weight: 400;
+  font-family: 'Chakra Petch', sans-serif;
+  text-shadow: 2px 2px 3px rgba(255, 244, 125, 0.557);
 }
+
 .main-landing .landing-count .timer_container ul li span {
   color: #2cb084;
   font-weight: 600;
@@ -2431,7 +2434,7 @@ div.loadImg {
     font-size: 2rem;
   }
   .landing-content .landing-count .timer_container .bottam-line p{
-    font-size: 1rem;
+    font-size: ;
   }
   .js-preloader .preloader-inner #loader .loadImg {
     width: 50vw;
