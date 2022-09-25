@@ -1732,21 +1732,21 @@ Pricing
   background-image: url(../images/first-plan-bg.png);
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px green;
+  box-shadow: 2px 2px 4px green;
 }
 
 .pricing-tables .second-item {
   background-image: url(../images/second-plan-bg.png);
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px green;
+  box-shadow: 2px 2px 4px green;
 }
 
 .pricing-tables .third-item {
   background-image: url(../images/third-plan-bg.png);
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px green;
+  box-shadow: 2px 2px 4px 4px green;
 }
 
 /* 
