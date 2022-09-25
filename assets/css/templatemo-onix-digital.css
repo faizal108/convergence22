@@ -768,6 +768,8 @@ header
 
 .header-area.header-sticky {
   min-height: 80px;
+  position: fixed;
+  top: 0;
 }
 
 .header-area .nav {
@@ -1694,7 +1696,7 @@ Pricing
 .pricing-tables .item h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #6c757d;
+  color: #4b5054;
 }
 
 .pricing-tables .item em {
