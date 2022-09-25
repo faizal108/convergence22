@@ -323,6 +323,10 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .page-section {
@@ -783,6 +787,10 @@ header
   .header-area .main-nav:before {
     display: none;
   }
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -795,9 +803,17 @@ header
   .background-header .main-nav .nav li:nth-child(6) {
     padding-right: 0px;
   }
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
   .background-header .main-nav .nav {
     margin-top: 80px !important;
   }
@@ -822,6 +838,8 @@ header
     height: 100px;
     box-shadow: none;
     text-align: center;
+    position: sticky;
+    z-index: 100;
   }
 
   .header-area .container {
@@ -927,6 +945,10 @@ header
 @media (min-width: 767px) {
   .header-area .main-nav .nav {
     display: flex !important;
+  }
+  .header-area {
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -1124,6 +1146,10 @@ Banner Style
   .main-landing .landing-title .row-3 img {
     height: 40px;
     width: 150px;
+  }
+  .header-area {
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -2282,9 +2308,17 @@ responsive
     width: 640px;
     height: 526px;
   }
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media (max-width: 992px) {
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
   .main-banner::before {
     display: none;
   }
@@ -2368,6 +2402,10 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
   .main-banner .item .down-buttons {
     display: inline-block;
   }
@@ -2422,6 +2460,10 @@ div.loadImg {
 }
 
 @media (max-width: 600px) {
+  .header-area {
+    position: sticky;
+    top: 0;
+  }
   .main-landing .landing-title div img {
     size: 400px 400px;
   }
