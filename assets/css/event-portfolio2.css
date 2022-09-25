@@ -212,3 +212,14 @@
       border: 2px solid rgb(0, 0, 0);
     }
   }
+
+  .details .content .btn-div h3{
+    margin: 0;
+    /* padding: 0; */
+    padding-top: 10px;
+    font-size: 1.1em;
+    line-height: 1em;
+    /* color: #444444; */
+    color: black;
+  
+  }
