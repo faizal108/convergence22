@@ -306,7 +306,6 @@ body {
 }
 
 @media (max-width: 991px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -787,7 +786,6 @@ header
 }
 
 @media (max-width: 992px) {
-
   .header-area .main-nav .nav li:last-child,
   .background-header .main-nav .nav li:last-child {
     display: none;
@@ -1067,7 +1065,7 @@ Banner Style
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("assets/images/sus-4.jpeg");
+  /* background-image: url("assets/images/sus-4.jpeg"); */
   background-size: cover;
   top: 50%;
   left: 0;
@@ -1110,7 +1108,7 @@ Banner Style
   align-items: center;
   flex-wrap: wrap;
   row-gap: 1rem;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   /* border: 2px solid red; */
 }
 
@@ -1118,17 +1116,15 @@ Banner Style
   height: 50px;
   width: 180px;
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .main-landing .landing-title .row-3 {
-    margin-top: .5rem;
-    
+    margin-top: 0.5rem;
   }
-  
+
   .main-landing .landing-title .row-3 img {
     height: 40px;
     width: 150px;
   }
-  
 }
 
 .main-landing .landing-content {
@@ -1148,11 +1144,11 @@ Banner Style
   border-radius: 20px;
 }
 
-.main-landing .landing-count {
+/* .main-landing .landing-count {
   width: 35%;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   height: 20%;
-}
+} */
 
 .main-landing .landing-logo img {
   width: 100%;
@@ -1161,9 +1157,9 @@ Banner Style
 }
 
 .main-landing .landing-count {
-  width: 700px;
+  width: 750px;
   /* border: 2px solid red; */
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1171,11 +1167,12 @@ Banner Style
 
 .main-landing .landing-count .timer_container {
   height: 310px;
+  width: 100%;
   background-color: #ffffffc2;
   backdrop-filter: blur(2px);
   /* border: 2px solid red; */
   display: flex;
-  margin-top: -60px;
+  /* margin-top: -60px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1184,8 +1181,51 @@ Banner Style
 
 .main-landing .landing-count .timer_container h1 {
   color: #585858;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.5vw;
+}
+.main-landing .landing-count .timer_container ul li {
+  color: #2cb084;
+  font-weight: 400;
+  font-family: 'Chakra Petch', sans-serif;
+  text-shadow: 2px 2px 3px rgba(255, 244, 125, 0.557);
+}
+
+.main-landing .landing-count .timer_container ul li span {
+  color: #2cb084;
+  font-weight: 600;
+}
+.main-landing .landing-count .timer_container .bottam-line p {
+  color: rgb(255, 28, 119);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgb(72, 72, 72);
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  /* text-align: center; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .main-banner .item {
@@ -1238,9 +1278,11 @@ Banner Style
   line-height: 46px;
   border-radius: 50%;
   background: rgb(255, 104, 95);
-  background: linear-gradient(105deg,
-      rgba(255, 104, 95, 1) 0%,
-      rgba(255, 144, 104, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(255, 104, 95, 1) 0%,
+    rgba(255, 144, 104, 1) 100%
+  );
   color: #fff;
   font-size: 20px;
 }
@@ -1893,9 +1935,11 @@ Video
 
 .our-videos .nacc .thumb .overlay-effect {
   background: rgb(255, 104, 95);
-  background: linear-gradient(105deg,
-      rgba(255, 104, 95, 1) 0%,
-      rgba(255, 144, 104, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(255, 104, 95, 1) 0%,
+    rgba(255, 144, 104, 1) 100%
+  );
   display: inline-block;
   position: absolute;
   left: 0;
@@ -1925,9 +1969,11 @@ Video
 
 .our-videos .menu .thumb .inner-content {
   background: rgb(255, 104, 95);
-  background: linear-gradient(105deg,
-      rgba(255, 104, 95, 1) 0%,
-      rgba(255, 144, 104, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(255, 104, 95, 1) 0%,
+    rgba(255, 144, 104, 1) 100%
+  );
   border-top-left-radius: 23px;
   border-bottom-right-radius: 23px;
   position: absolute;
@@ -2015,9 +2061,11 @@ contact
   text-align: center;
   line-height: 46px;
   background: rgb(255, 104, 95);
-  background: linear-gradient(105deg,
-      rgba(255, 104, 95, 1) 0%,
-      rgba(255, 144, 104, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(255, 104, 95, 1) 0%,
+    rgba(255, 144, 104, 1) 100%
+  );
   border-radius: 50%;
   color: #fff;
   font-size: 22px;
@@ -2361,7 +2409,7 @@ responsive
 }
 
 div.loadImg {
-  width: 20%
+  width: 20%;
 }
 
 @media (max-width: 600px) {
@@ -2378,15 +2426,17 @@ div.loadImg {
   }
 
   .landing-content .landing-count .timer_container #countdown #count {
-    font-size: 1.1rem;
-    padding: 1.0rem;
+    font-size: 2rem;
+    padding: 1rem;
   }
 
   .landing-content .landing-count .timer_container #countdown #count span {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
-
+  .landing-content .landing-count .timer_container .bottam-line p{
+    font-size: 1rem;
+  }
   .js-preloader .preloader-inner #loader .loadImg {
-    width: 50vw
+    width: 50vw;
   }
 }
