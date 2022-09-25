@@ -768,8 +768,6 @@ header
 
 .header-area.header-sticky {
   min-height: 80px;
-  position: fixed;
-  top: 0;
 }
 
 .header-area .nav {
@@ -1215,7 +1213,7 @@ Banner Style
 .main-landing .landing-count .timer_container ul li {
   color: #2cb084;
   font-weight: 400;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   text-shadow: 2px 2px 3px rgba(255, 244, 125, 0.557);
 }
 
@@ -1735,25 +1733,25 @@ Pricing
   background-image: url(../images/first-plan-bg.png);
   /* border: 1px solid; */
   padding: 10px;
-  box-shadow: 1px 1px 8px #2CB084;
+  box-shadow: 1px 1px 8px #2cb084;
 }
 .pricing-tables .second-item {
   background-image: url(../images/second-plan-bg.png);
   /* border: 1px solid; */
   padding: 10px;
-  box-shadow: 1px 1px 10px #2CB084;
+  box-shadow: 1px 1px 10px #2cb084;
 }
 
 .pricing-tables .third-item {
   background-image: url(../images/third-plan-bg.png);
   /* border: 1px solid; */
   padding: 10px;
-  box-shadow: 1px 1px 10px #2CB084;
+  box-shadow: 1px 1px 10px #2cb084;
 }
 .pricing-tables .first-item:hover,
 .pricing-tables .second-item:hover,
 .pricing-tables .third-item:hover {
-  box-shadow: 2px 2px 10px #2CB084;
+  box-shadow: 2px 2px 10px #2cb084;
 }
 
 /* 
@@ -2297,8 +2295,14 @@ responsive
 
 @media (max-width: 992px) {
   .header-area {
-    position: sticky;
+    position: fixed;
     top: 0;
+  }
+  .main-landing .landing-title {
+    margin-top: 5.4rem;
+  }
+  .main-landing .landing-title .row-1 {
+    padding-top: 1rem;
   }
   .main-banner::before {
     display: none;
@@ -2383,10 +2387,6 @@ responsive
 }
 
 @media (max-width: 767px) {
-  .header-area {
-    position: sticky;
-    top: 0;
-  }
   .main-banner .item .down-buttons {
     display: inline-block;
   }
@@ -2441,10 +2441,6 @@ div.loadImg {
 }
 
 @media (max-width: 600px) {
-  .header-area {
-    position: sticky;
-    top: 0;
-  }
   .main-landing .landing-title div img {
     size: 400px 400px;
   }
@@ -2465,7 +2461,7 @@ div.loadImg {
   .landing-content .landing-count .timer_container #countdown #count span {
     font-size: 2rem;
   }
-  .landing-content .landing-count .timer_container .bottam-line p{
+  .landing-content .landing-count .timer_container .bottam-line p {
     font-size: 1rem;
   }
   .js-preloader .preloader-inner #loader .loadImg {
