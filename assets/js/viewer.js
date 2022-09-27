@@ -159,6 +159,13 @@ $("#viewE5 .btn-close").click(function () {
     $("#viewE5").removeClass("open");
 });
 
+$("#e6").click(function () {
+    $("#viewE6").addClass("open");
+});
+$("#viewE6 .btn-close").click(function () {
+    $("#viewE6").removeClass("open");
+});
+
 $("#m1").click(function () {
     $("#viewm1").addClass("open");
 });
