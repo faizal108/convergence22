@@ -2496,3 +2496,27 @@ div.loadImg {
     padding: 0;
   }
 }
+
+#mobile-register-btn{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: fit-content;
+  padding-top: 1rem;
+  display: none;
+}
+#mobile-register-btn button {
+  width: 6rem;
+  padding: 6px;
+  border-radius: 20px;
+  color: white;
+  background-color: #ff695f;
+  border: none;
+}
+
+@media screen and (max-width:767px) {
+  #mobile-register-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
