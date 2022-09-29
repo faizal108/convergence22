@@ -2518,4 +2518,10 @@ div.loadImg {
     align-items: center;
     justify-content: center;
   }
+  #mobile-register-btn{
+   border: 2px solid red; 
+  width: 100%;
+  height: fit-content;
+  padding-top: 1rem;
+ }
 }
